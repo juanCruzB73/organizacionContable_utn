@@ -1,5 +1,5 @@
-export function ejercicioD(password){
-
+function ejercicioD(password){
+    console.log("buscando coincidencia...")
 	let currentAtempt=Array(password.length).fill(0);
 	const nums = '123456789';
     const alphabetLower = 'abcdefghijklmnopqrstuvwxyz';
@@ -7,17 +7,16 @@ export function ejercicioD(password){
     const mix=nums+alphabetLower+alphabetUpper;
 	let counter = 1;
 	let start=new Date().getTime();
-	let divD=document.querySelector('.ejercicioD');
 	const attempt=(currentIndex)=>{
 		if(currentIndex>=password.length){
 			if(currentAtempt.join('')===password){   
 				let end = new Date().getTime();
 				let timePassed = end - start;
-				divD.innerHTML=`
+				console.log(`
 					<p>match encontrado: ${currentAtempt.join('')}</p>
 					<p>numero de intentos: ${counter}</p>
 					<p>tiempo transcurrido: ${timePassed}</p>
-				`
+				`)
 				return true
 			}
 			return false
@@ -26,7 +25,7 @@ export function ejercicioD(password){
             if (i >= mix.length) {
                 return false;
             }
-            console.log(counter)
+            console.log(counter+" "+currentAtempt.join(''))
             currentAtempt[currentIndex] = mix[i];
             counter++;
             
@@ -42,3 +41,4 @@ export function ejercicioD(password){
     
     attempt(0);
 };
+ejercicioD("Hb5gr5A");

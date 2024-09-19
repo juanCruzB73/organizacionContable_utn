@@ -2,7 +2,7 @@ import sys
 
 def cesar_cipher(file_path):
     try:
-        with open(file_path,'r')as file:
+        with open(file_path,'r',encoding='utf-8')as file:
             content=file.read()
         ascii_chars = ''.join(chr(i) for i in range(256))
 
@@ -16,7 +16,7 @@ def cesar_cipher(file_path):
                 deciphered_text+=ascii_chars[index_to_encrypt]
             else:
                 deciphered_text+=char
-        with open(final_file,'w')as file:
+        with open(final_file,'w',encoding='utf-8')as file:
             file.write(deciphered_text)
         print(f"Successfully deciphered {file_path}.")
 
