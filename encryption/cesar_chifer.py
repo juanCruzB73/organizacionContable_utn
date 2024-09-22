@@ -6,7 +6,7 @@ def cesar_cipher(file_path):
             content=file.read()
         ascii_chars = ''.join(chr(i) for i in range(256))
 
-        password=12
+        
         encrypted_text=''
 
         for char in content:
