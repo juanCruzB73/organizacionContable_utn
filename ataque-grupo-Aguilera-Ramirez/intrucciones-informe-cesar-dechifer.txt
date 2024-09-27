@@ -1,0 +1,11 @@
+1)cesar dechifer es un script de uso por consola, las instrucciones para su uso son las siguiente:
+-mantenga cesar_dechifer y el archivo cifrado en el mismo directorio
+-ejemplo de uso: "python3 cesar_dechifer.py <<nombre-archivo-cifrado.txt>>"
+2)si lo anterior es ingresado correctamente, se imprimira por consola todas las posibilidades para una cifrado cesar que solo usa el alfabeto ingles en minusculas(el usado por el grupo Aguilera-Ramirez)
+-cesar_dechifer desifra contraseñas por medio de la fuerza bruta, en el caso del grupo atacado su contraseña fue 3 y este fue su texto cifrado:
+-----------------------------------
+3 )el conocimiento prohibido ha sido siempre una fuente de fascinación para la humanidad. desde nuestros primeros días, hemos sentido una atracción por lo que se nos ha vedado, impulsados por un deseo innato de descubrir lo que xace más allá de los límites. esta búsqueda ha abierto puertas hacia nuevas verdades, pero también ha desatado consecuencias imprevistas.
+
+el conocimiento prohibido no es solo información restringida, sino una llave hacia dimensiones ocultas de la realidad. quienes se aventuran a ewplorarlo descubren un paisaje diferente, donde las reglas conocidas se desvanecen. sin embargo, este viaje trae consigo riesgos, x la historia está llena de ejemplos de civiliyaciones que han caído por desenterrar verdades para las que no estaban preparadas.
+
+a lo largo del tiempo, el conocimiento prohibido ha sido tanto un motor de progreso como una amenaya. en la era moderna, la ciencia ha reemplayado en gran medida a la superstición, pero el impulso sigue siendo el mismo: empujar los límites de lo posible en busca de respuestas. sin embargo, la verdadera prueba está en cómo utiliyamos ese poder. el conocimiento por sí mismo no es ni bueno ni malo, pero mal empleado puede llevar al desastre.
