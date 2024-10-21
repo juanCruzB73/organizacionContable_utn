@@ -1,0 +1,53 @@
+peer to peer
+sistema de comunicacion desentralizado, cada nodo funciona como centro de intercambio de datos.
+
+proof of work
+un prueba cryptografica para comprobar que la ip "sea real"
+
+cuando la prueba se resulve el bloque encontrado se añade al registro general
+
+cada bloque esta encadenado con el anterior
+
+**********************************
+
+class blockchain{
+	blocks[]
+	nodes[]
+	createBloc()
+}i
+
+createBlock(){
+	block={index,date,transaction,verification,hash}
+}
+bitcoin:from,to,amount,nonce,hash,date,fee
+etherium:...bitcoin,data:bits de codigo
+**********
+requirements oof a system to record and transfer value
+
+problem1:need currenci that represent value
+solution1:crate currency for the system
+etherium solution:ether tokens
+
+problem2:need to represent people and the amount of money they own
+solution1:person as an account with its info
+etherium2:cualquiera puede tener las cuentas que quiera
+
+problem3:transfer money
+solution3: hacen un registro con todas las transacciones
+etherium3:transacciones entre usuarios
+
+problem4: keep record of transaction
+solution4:se guarda en base de datos
+etherium:se almacena en la misma block chain
+
+******************************
+arquitectura BITCOIN
+blockchain:cadena de valores,database of transactions
+protocolos:
+
+transaction object{property,purpose,from,to,value,}
+
+
+
+
+
