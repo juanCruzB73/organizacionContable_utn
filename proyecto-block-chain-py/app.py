@@ -4,7 +4,7 @@ import time
 class Block:
     def __init__(self, index, previous_hash, data, timestamp=None):
         self.index = index
-        self.previous_hash = previous_hash  # Corrected variable name
+        self.previous_hash = previous_hash 
         self.data = data
         self.timestamp = timestamp or time.time()
         self.nonce = 0
@@ -16,7 +16,7 @@ class Block:
 
     def mine_block(self, difficulty):
         target = '0' * difficulty
-        while self.hash[:difficulty] != target:  # Fixed condition
+        while self.hash[:difficulty] != target:
             self.nonce += 1
             self.hash = self.calculate_hash()
         print(f"BLOCK MINED: {self.hash}")
@@ -24,7 +24,7 @@ class Block:
 class Blockchain:
     def __init__(self):
         self.chain = [self.create_genesis_block()]
-        self.difficulty = 4  # Difficulty level
+        self.difficulty = 4 
 
     def create_genesis_block(self):
         return Block(0, "0", "Genesis Block")
@@ -33,14 +33,14 @@ class Blockchain:
         return self.chain[-1]
 
     def add_block(self, new_block):
-        new_block.previous_hash = self.get_latest_block().hash  # Corrected variable name
-        new_block.mine_block(self.difficulty)  # Fixed method name
+        new_block.previous_hash = self.get_latest_block().hash 
+        new_block.mine_block(self.difficulty) 
         self.chain.append(new_block)
 
     def is_chain_valid(self):
         for i in range(1, len(self.chain)):
             current_block = self.chain[i]
-            previous_block = self.chain[i - 1]  # Corrected variable name
+            previous_block = self.chain[i - 1] 
 
             if current_block.hash != current_block.calculate_hash():
                 print("Current block hash is not valid")
